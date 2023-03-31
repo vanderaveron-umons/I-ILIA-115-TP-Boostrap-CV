@@ -1,0 +1,70 @@
+/* On applique la fonte Saira à tous les titre de taille H2 */
+div h2 {
+    font-family: "Saira Extra Condensed";
+    font-weight: 700;
+    color: #343a40;
+}
+
+/* Ne pas souligner les liens visités */
+div a {
+    text-decoration: none;
+}
+
+/* On redefinit le style des cards avec des arrondis.
+        Comme couleur de fond, on applique deux couleurs, mais on zoome à 200% comme ça une seule couleur est affichée.
+        On définit plus loin le fait que quand on passe la souris sur la card, le fond se déplace, et on voit la seconde couleur.
+        Ensuite on applique une transition de 0.5 comme ça on a le temps de voir le changement de couleur.
+        Tout cela est tiré du site : https://codingyaar.com/bootstrap-card-hover-effect-3-background-color-change/
+     */
+div.card {
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 5px 5px 10px #e1e1e1;
+    padding: 3em 0;
+    border-bottom-right-radius: 4em;
+    border-top-left-radius: 4em;
+    background: linear-gradient(to left, teal 50%, #26282b 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s ease-out;
+}
+.card:hover {
+    background-position: left;
+}
+
+/* On définit la couleur de fond de la colonne de gauche (avec la photo de profil) et on centre le texte. */
+.colonne-gauche {
+    background-color: var(--bs-dark-bg-subtle);
+    text-align: center;
+}
+
+/* On définit que la div qui contient la barre de navigation doit rester en haut de l'écran.
+   On force la "profondeur" (l'axe Z) pour qu'elle soit toujours affichée au-dessus des autres éléments.
+
+*/
+.navbar-div {
+
+    position: sticky;
+    top: 0;
+    z-index: 1; /* set z-index to ensure navbar appears on top of other elements */
+}
+
+/* On définit la couleur de la barre de navigation*/
+.navbar {
+    background-color: var(--bs-dark-bg-subtle);
+}
+
+
+/* À partir des écrans larges, on inverse l'ordre d'affichage pour que la colonne de gauche qui
+ contient la photo soit affichée en bas.
+ */
+@media (max-width: 991.98px) {
+    .colonne-gauche {
+        order: 2;
+    }
+
+    .colonne-droite {
+        order: 1;
+    }
+}

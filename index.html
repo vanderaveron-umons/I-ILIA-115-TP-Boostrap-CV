@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Prise en charge de l'encodage UTF-8 pour utiliser les caractères accentués  -->
+    <meta charset="UTF-8">
+    <!-- Initialisation du viewport HTML5 à la largeur de l'écran avec un zoom de 100% -->
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+
+    <title>CV en ligne de Nicolas Vanderavero</title>
+
+    <!-- Inclusion de ma propre feuille de style. Allez voir le contenu, il y a plein de commentaires ! -->
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+
+    <!-- Inclusion de la feuille de style de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Inclusion de la feuille de style de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Inclusion de la fonte Saira -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<!-- Container principal. Il est fluid pour prendre la largeur totale de la page -->
+<div class="container-fluid" id="container-principal">
+
+    <!-- Ligne principale qui contient 2 colonnes :
+            - La colonne de gauche avec la photo de profil,
+            - La colonne de droite la barre de navigation et les sections
+    -->
+    <div class="row" id="ligne-principale">
+
+        <!-- La colonne de gauche qui contient la photo de profil -->
+        <!-- On change diminue la largeur de la colonne à 2 pour les affichages larges -->
+        <div class="col-lg-2 colonne-gauche">
+            <img src="img/photo.png" class="img-fluid rounded-circle" style="max-width: 80%; object-position: center;">
+            <div class="text-center text-light" style="text-align: center;padding-top:20px;padding-bottom: 20px;">
+                <h2>VANDERAVERO Nicolas</h2>
+                <a href="https://github.com/vanderaveron-umons"> <span class="fa-brands fa-github"></span></a>
+                <a href="mailto:nicolas.vanderavero@student.umons.ac.be"> <span class="fa fa-envelope"></span></a>
+            </div>
+        </div>
+
+        <!-- La colonne de droite qui contient la barre de navigation et les sections -->
+        <div class="col colonne-droite">
+
+            <!-- La première ligne de la colonne de droite est la navbar. On la place dans une div -->
+            <div class="navbar-div">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">Mon CV</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a href="#about" class="nav-link">
+                                        <i class="fa fa-user"></i> <span> À propos </span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#skills" class="nav-link">
+                                        <i class="fa fa-terminal"></i> <span> Compétences </span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#certifications" class="nav-link">
+                                        <i class="fa-solid fa-trophy"></i> <span> Certifications </span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link">
+                                        <i class="fa-solid fa-address-book"></i> <span> Contact </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- La seconde ligne de la colonee de droite sont les différents sections -->
+            <div class="row">
+                <!-- Première section : à propos -->
+                <section id="about" class="about">
+                <div>
+                    <div class="section-title" style="padding: 20px;">
+                        <h2>À propos de moi</h2>
+                        <p>Bonjour ! Je m'appelle Nicolas. Je suis analyste en Cyber Sécurité.</p>
+                    </div>
+
+                    <div class="row" style="padding: 20px;">
+                        <div class="col-lg-4">
+                            <img src="img/CyberSecurite.webp" class="img-fluid img-thumbnail  shadow" alt="">
+                        </div>
+                        <div class="col-lg-8 pt-4 pt-lg-0 content">
+                            <h3>Analyse de malware.</h3>
+                            <p class="fst-italic">Passionné par l'analyse de malware, j'ai développé des compétences
+                                solides dans ce domaine.</p>
+                            <p>J'identifie et en isole les menaces, en utilisant des outils d'analyse spécialisés et en
+                                proposant des solutions pour protéger les systèmes contre les attaques malveillantes.
+                                J'ai un grand intérêt pour les technologies de pointe, et je suis capable de travailler
+                                de manière autonome et à résoudre des problèmes
+                                complexes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <!-- Deuxième section : les compétences -->
+                <section id="skills" class="skills section-bg">
+                    <div class="container-fluid" style="padding:20px;">
+                        <div class="section-title">
+                            <h2>Compétences</h2>
+                            <p>Mes compétences sont orientées vers la programmation bas-niveau (C, Assembleur) mais
+                                également vers les langages de scripting permettant d'automatiser les tâches
+                                répétitives.</p>
+                        </div>
+
+                        <div class="container-fluid" style="padding: 20px;">
+                            <h4 class="skill">C</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid" style="padding: 20px;">
+                            <h4 class="skill">Assembleur</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width:90%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid" style="padding: 20px;">
+                            <h4 class="skill">Python</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                     role="progressbar" style="width:70%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Deuxième section : les certifications -->
+                <section id="certifications" class="portfolio section-bg" style="padding-top: 20px; padding-bottom: 20px;">
+                    <div class="container-fluid">
+                        <div class="section-title">
+                            <h2>Certifications</h2>
+                            <p>Voici les certifications que je possède. Cliquez sur une carte pour être redirigé vers la
+                                page de validation de la certification.</p>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="https://www.credly.com/badges/b56e3f21-5b72-4671-9fa9-be29df28ea68/public_url"
+                                   target="_blank" rel="noopener noreferrer">
+                                    <div class="card">
+                                        <img src="img/CompTIA_Network_Plus.png">
+                                        <div class="card-body">
+                                            <h5 class="card-title">CompTIA Network+</h5>
+                                            <p class="card-text">La certification CompTIA Network+ est une certification professionnelle reconnue dans le domaine des réseaux informatiques qui atteste des connaissances et compétences essentielles pour installer, configurer, dépanner et sécuriser des réseaux filaires et sans fil.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="https://www.credly.com/badges/7bde8641-ff64-4947-98e1-8841bb116463/public_url"
+                                   target="_blank" rel="noopener noreferrer">
+                                    <div class="card">
+                                        <img src="img/CompTIA_Security_Plus.png">
+                                        <div class="card-body">
+                                            <h5 class="card-title">CompTIA Security+</h5>
+                                            <p class="card-text">La certification CompTIA Security+ est une certification de niveau intermédiaire qui valide les compétences en matière de sécurité informatique et de gestion des risques pour les professionnels travaillant dans le domaine de la technologie de l'information.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="https://www.credly.com/badges/8fb20cfa-3f0d-40a1-8bf2-4348c5bd4a67/public_url"
+                                   target="_blank" rel="noopener noreferrer">
+                                    <div class="card">
+                                        <img src="img/GREM.png">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GIAC GREM</h5>
+                                            <p class="card-text">La certification GIAC GREM (GIAC Reverse Engineering Malware) est une accréditation professionnelle qui atteste des compétences et connaissances approfondies en matière de détection, d'analyse et de neutralisation de logiciels malveillants.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dernière section : le formulaire de contact -->
+                <section id="contact">
+                        <div class="container-fluid" style="padding-top:20px">
+                            <h2>Contact</h2>
+                            <form method="post" action="#" onsubmit="return contact(this);">
+                                <div class="form-group">
+                                    <label for="name">Nom</label>
+                                    <input type="text" class="form-control" id="name" name="name" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Commentaire</label>
+                                    <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Demande d'informations</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+                                        <label class="form-check-label" for="inlineRadio2">Proposition d'emploi</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </form>
+                        </div>
+
+
+                    <!--
+                        <h2>Contact</h2>
+
+
+                        <div class="form-group">
+                            <label style="margin-bottom:5px">Nom</label>
+                            <input type="text" name="name" class="form-control" style="margin-bottom:10px">
+                            <label style="margin-bottom:5px">Email</label>
+                            <input type="text" name="email" class="form-control" style="margin-bottom:10px">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" style="margin-bottom:5px">Commentaire</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                      style="margin-bottom:10px"></textarea>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                   value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Demande d'informations</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                   value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Proposition d'emploi</label>
+                        </div>
+                        <div class="w-100"></div>
+                        <a class="btn btn-primary" href="index.html" onclick="return contact(this);"
+                           style="margin-top:15px;margin-bottom:20px">
+                            Envoyer
+                        </a>
+                    </div>
+-->
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <!-- Container du footer. Il est fluid pour prendre la largeur totale de la page -->
+    <div class="container-fluid" id="container-footer">
+        <div class="row bg-dark-subtle" id="ligne-footer" style="text-align: center">
+            <div><span class="fa fa-copyright"></span> 2023, Nicolas Vanderavero</div>
+        </div>
+    </div>
+</footer>
+
+<!-- Inclusion du code javascript pour afficher un message lors du click sur le bouton -->
+<script type="text/javascript" src="js/javascript.js"></script>
+
+
+<!-- Inclusion de la librairie Javascript de Bootstrap en fin de page pour ne pas ralentir le chargement. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</html>
