@@ -8,7 +8,7 @@ Il a été également déployé sur Netlifly et [est disponible ici](https://cut
 
 Ce repository est lié a Netlifly et un système d'intégration continue est configuré.
 
-Le status du dernier déploiement est : [![Netlify Status]([![Netlify Status](https://api.netlify.com/api/v1/badges/6168b3a5-e68f-435d-8b00-941bcd5f385b/deploy-status)](https://app.netlify.com/sites/cute-cheesecake-177050/deploys))
+Le status du dernier déploiement est : [![Netlify Status](https://api.netlify.com/api/v1/badges/6168b3a5-e68f-435d-8b00-941bcd5f385b/deploy-status)](https://app.netlify.com/sites/cute-cheesecake-177050/deploys)
 
 
 ## Objectifs réalisés
