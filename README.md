@@ -21,3 +21,4 @@ Les modifications apportées sont les suivantes :
 - Utilisation des attributs 'order' pour que la photo de profil s'affiche en bas de page 
 - Modification du style des cards pour afficher des bords ronds et avoir un effet lorsque la souris passe dessus
 - Utilisation de Javascript pour valider le contenu de formulaire de contact
+- Installation d'un manifest et d'un service worker et une page offline minimale pour présenter le site comme installable en PWA
