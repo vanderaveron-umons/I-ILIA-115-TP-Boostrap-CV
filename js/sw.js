@@ -1,5 +1,5 @@
 const CACHE_NAME = 'cv-cache-v1';
-const OFFLINE_PAGE_URL = 'offline.html';
+const OFFLINE_PAGE_URL = '../offline.html';
 
 // Cache the offline page on service worker installation
 self.addEventListener('install', event => {
