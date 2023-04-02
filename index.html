@@ -21,6 +21,13 @@
     <!-- Inclusion de la fonte Saira -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
 
+    <!-- Inclusion du manifest pour rendre le site PWA -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <!-- Enregistrement du serviceworker -->
+    <script>
+            navigator.serviceWorker.register("js/sw.js");
+    </script>
+
 </head>
 <body>
 <!-- Container principal. Il est fluid pour prendre la largeur totale de la page -->
